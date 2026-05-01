@@ -17,6 +17,7 @@
 #SBATCH --mem=20G
 #SBATCH --job-name=tangram-gnn
 #SBATCH --output=tangram-gnn.%j.out
+#SBATCH --qos=normal
 
 module purge
 module load anaconda
