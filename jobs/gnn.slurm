@@ -10,18 +10,19 @@
 #   checkpoints/gnn/.
 
 #SBATCH --nodes=1
-#SBATCH --time=22:00:00
+#SBATCH --time=30:00:00
 #SBATCH --partition=amilan
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=20G
 #SBATCH --job-name=tangram-gnn
 #SBATCH --output=tangram-gnn.%j.out
-#SBATCH --qos=normal
+#SBATCH --qos=long
 
 module purge
 module load anaconda
 
+source "$(conda info --base)/etc/profile.d/conda.sh"
 conda activate amfa-custom-env
 
 python3 run_gnn.py \
