@@ -22,6 +22,7 @@
 module purge
 module load anaconda
 
+source "$(conda info --base)/etc/profile.d/conda.sh"
 conda activate amfa-custom-env
 
 python3 run_hrep.py \

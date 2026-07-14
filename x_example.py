@@ -8,6 +8,26 @@ from gym import spaces
 import torch
 import os
 
+# Baseline-encoder constants (flat MLP / CNN strawmen — see MLPRL.py / CNNRL.py)
+BOARD_MAX      = 11.0
+NUM_PIECES     = 6
+POSE_DIM       = 6                       # per piece: cx, cy, shape_id, orient_id, target_dx, target_dy
+FLAT_POSE_DIM  = NUM_PIECES * POSE_DIM   # 36
+GRID           = 15                      # occupancy grid side (board coords are bounded to [0, 14])
+GRID_CHANNELS  = 2 * NUM_PIECES + 1      # per-piece occupancy + per-piece target + locked mask
+# Square=0, triangle orientations SE/SW/NE/NW=1..4 (squares get orientation_id=0)
+_ORIENTATION_ID = {None: 0, "SE": 1, "SW": 2, "NE": 3, "NW": 4}
+
+
+def _cell_in_poly(poly, cx, cy, X, Y):
+    """True if the point (cx, cy) satisfies every minimized constraint of poly."""
+    for c in poly.minimized_constraints():
+        val = float(c.coefficient(X)) * cx + float(c.coefficient(Y)) * cy + float(c.inhomogeneous_term())
+        if val < 0:
+            return False
+    return True
+
+
 class XTangramEnv:
     def __init__(self):
         self.x, self.y = Variable(0), Variable(1)
@@ -53,6 +73,13 @@ class XTangramEnv:
             self._create_triangle(9, 8, "NW")
         ]
         self.locked = [False] * len(self.pieces)
+        # Static per-piece metadata for the flat-MLP baseline (shape_id: 0=square, 1=triangle)
+        self.piece_shape_id = [0, 0, 1, 1, 1, 1]
+        self.piece_orientation_id = [
+            _ORIENTATION_ID[None], _ORIENTATION_ID[None],
+            _ORIENTATION_ID["SE"], _ORIENTATION_ID["SW"],
+            _ORIENTATION_ID["NE"], _ORIENTATION_ID["NW"],
+        ]
 
     def _poly_centroid(self, poly):
         """Return the centroid of a polytope as a numpy array [x, y]."""
@@ -143,24 +170,72 @@ class SymbolicTangramGym(gym.Env):
         
         # RESTORED: Observation Space as a Dictionary
         self.observation_space = spaces.Dict({
-            "v_rep": spaces.Box(low=0, high=1, shape=(self.num_pieces, 4, 2)), 
+            "v_rep": spaces.Box(low=0, high=1, shape=(self.num_pieces, 4, 2)),
             "h_rep": spaces.Box(low=-1, high=1, shape=(self.num_pieces, 5, 3)),
-            "adj": spaces.Box(low=0, high=1, shape=(self.num_pieces, 5, 5)) 
+            "adj": spaces.Box(low=0, high=1, shape=(self.num_pieces, 5, 5)),
+            "flat_pose": spaces.Box(low=-1, high=1, shape=(FLAT_POSE_DIM,)),
+            "grid_image": spaces.Box(low=0, high=1, shape=(GRID_CHANNELS, GRID, GRID)),
         })
+        self._target_channels = self._rasterize_targets()
 
     def _get_obs(self):
         """Returns the dictionary observation required by the training script."""
         h_rep_data = self._extract_h_rep()
         v_rep_data = self._extract_v_rep()
         graph_data = self._build_graph_adj()
-        
-        # If your training script uses the GNN graph logic, 
+
+        # If your training script uses the GNN graph logic,
         # you can call your _build_graph_rep(h_rep_data) here.
         return {
             "v_rep": v_rep_data,
             "h_rep": h_rep_data,
-            "adj": graph_data # Returning h_rep as node features for the graph
+            "adj": graph_data, # Returning h_rep as node features for the graph
+            "flat_pose": self._extract_flat_pose(),
+            "grid_image": self._extract_grid_image(),
         }
+
+    # ── Flat-MLP baseline observation ─────────────────────────────────────────
+    def _extract_flat_pose(self):
+        """Per-piece [cx, cy, shape_id, orientation_id, target_dx, target_dy], flattened."""
+        pose = []
+        for i, piece in enumerate(self.inner.pieces):
+            c = self.inner._poly_centroid(piece)
+            tc = self.inner.target_centroids[i]
+            pose.extend([
+                c[0] / BOARD_MAX,
+                c[1] / BOARD_MAX,
+                float(self.inner.piece_shape_id[i]),
+                self.inner.piece_orientation_id[i] / 4.0,
+                (tc[0] - c[0]) / BOARD_MAX,
+                (tc[1] - c[1]) / BOARD_MAX,
+            ])
+        return np.array(pose, dtype=np.float32)
+
+    # ── CNN baseline observation ──────────────────────────────────────────────
+    def _rasterize(self, poly):
+        """Boolean occupancy grid [GRID, GRID] for a single PPL polyhedron."""
+        X, Y = self.inner.x, self.inner.y
+        grid = np.zeros((GRID, GRID), dtype=np.float32)
+        for i in range(GRID):
+            for j in range(GRID):
+                if _cell_in_poly(poly, i + 0.5, j + 0.5, X, Y):
+                    grid[i, j] = 1.0
+        return grid
+
+    def _rasterize_targets(self):
+        """Target-silhouette channels are static — computed once and cached."""
+        return np.stack([self._rasterize(tp) for tp in self.inner.target_pieces])
+
+    def _extract_grid_image(self):
+        n = self.num_pieces
+        img = np.zeros((GRID_CHANNELS, GRID, GRID), dtype=np.float32)
+        for i, piece in enumerate(self.inner.pieces):
+            img[i] = self._rasterize(piece)
+        img[n:2 * n] = self._target_channels
+        for i in range(n):
+            if self.inner.locked[i]:
+                img[2 * n] = np.maximum(img[2 * n], img[i])
+        return img
 
     def _extract_h_rep(self):
         h_rep = []

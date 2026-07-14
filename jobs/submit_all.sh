@@ -1,12 +1,14 @@
 #!/bin/bash
-# Submit all three training jobs to the Alpine cluster.
-# Run this from tangram-git/ or tangram-git/jobs/.
-# If a job was already partially run, it will resume from its last checkpoint.
+# Submit all (method, seed) training jobs to the Alpine cluster.
+# Run this from tangram-git/ (sbatch's working directory must be tangram-git/
+# so train_single.py can find its sibling modules and checkpoints/ dir).
+# If a job was already partially run, it will resume from its last checkpoint;
+# seed 0 for hrep/vrep/gnn will just evaluate the already-trained checkpoint.
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
-sbatch "$SCRIPT_DIR/hrep.slurm"
-sbatch "$SCRIPT_DIR/vrep.slurm"
-sbatch "$SCRIPT_DIR/gnn.slurm"
+for f in "$SCRIPT_DIR"/*_seed*.slurm; do
+    sbatch "$f"
+done
 
-echo "All three jobs submitted. Check status with: squeue -u \$USER"
+echo "All (method, seed) jobs submitted. Check status with: squeue -u \$USER"

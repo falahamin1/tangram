@@ -8,10 +8,12 @@ if __name__ == "__main__":
     ap.add_argument('--checkpoint-dir',       default=os.path.join(os.path.dirname(__file__), 'checkpoints', 'gnn'))
     ap.add_argument('--checkpoint-interval',  type=int, default=500,
                     help='Save checkpoint every N episodes (0 = off)')
+    ap.add_argument('--seed', type=int, default=0)
     args = ap.parse_args()
 
     train_graph_rep(
         episodes=args.episodes,
         checkpoint_dir=args.checkpoint_dir,
         checkpoint_interval=args.checkpoint_interval,
+        seed=args.seed,
     )

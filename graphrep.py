@@ -1,5 +1,6 @@
 import os
 import glob
+import random
 import torch
 import torch.optim as optim
 import torch.nn.functional as F
@@ -46,7 +47,7 @@ def _load_latest_checkpoint(ckpt_dir, model, optimizer):
         return 0, [], -float('inf'), None
     latest = ckpts[-1]
     print(f"[GNN] Resuming from {latest}")
-    data = torch.load(latest, map_location='cpu')
+    data = torch.load(latest, map_location='cpu', weights_only=False)
     model.load_state_dict(data['model_state_dict'])
     optimizer.load_state_dict(data['optimizer_state_dict'])
     return (data['episode'] + 1, data['reward_history'],
@@ -55,7 +56,12 @@ def _load_latest_checkpoint(ckpt_dir, model, optimizer):
 
 def train_graph_rep(episodes=1000,
                     checkpoint_dir='checkpoints/gnn',
-                    checkpoint_interval=500):
+                    checkpoint_interval=500,
+                    seed=0):
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+
     HP = {
         "lr": 1e-4,
         "clip_eps": 0.2,
