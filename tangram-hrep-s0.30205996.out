@@ -1,0 +1,180 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+[train_single] method=hrep  seed=0  episodes=40000  ckpt_dir=/projects/amfa5003/tangram/checkpoints/hrep
+[H-rep] Resuming from /projects/amfa5003/tangram/checkpoints/hrep/checkpoint_ep0026000.pth
+[H-rep] episodes=40000  start_ep=26001  ckpt_dir=/projects/amfa5003/tangram/checkpoints/hrep
+H-Rep Ep 26100 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 26200 | Recent Avg: 14.50 | Best Avg: 16.25
+H-Rep Ep 26300 | Recent Avg: 16.23 | Best Avg: 16.25
+H-Rep Ep 26400 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 26500 | Recent Avg: 16.24 | Best Avg: 16.25
+[H-rep] checkpoint saved → ep=26500
+H-Rep Ep 26600 | Recent Avg: 16.25 | Best Avg: 16.25
+H-Rep Ep 26700 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 26800 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 26900 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 27000 | Recent Avg: 16.24 | Best Avg: 16.25
+[H-rep] checkpoint saved → ep=27000
+H-Rep Ep 27100 | Recent Avg: 16.04 | Best Avg: 16.25
+H-Rep Ep 27200 | Recent Avg: 16.25 | Best Avg: 16.25
+H-Rep Ep 27300 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 27400 | Recent Avg: 14.66 | Best Avg: 16.25
+H-Rep Ep 27500 | Recent Avg: 16.24 | Best Avg: 16.25
+[H-rep] checkpoint saved → ep=27500
+H-Rep Ep 27600 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 27700 | Recent Avg: 16.23 | Best Avg: 16.25
+H-Rep Ep 27800 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 27900 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 28000 | Recent Avg: 16.25 | Best Avg: 16.25
+[H-rep] checkpoint saved → ep=28000
+H-Rep Ep 28100 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 28200 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 28300 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 28400 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 28500 | Recent Avg: 16.24 | Best Avg: 16.25
+[H-rep] checkpoint saved → ep=28500
+H-Rep Ep 28600 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 28700 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 28800 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 28900 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 29000 | Recent Avg: 16.24 | Best Avg: 16.25
+[H-rep] checkpoint saved → ep=29000
+H-Rep Ep 29100 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 29200 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 29300 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 29400 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 29500 | Recent Avg: 16.24 | Best Avg: 16.25
+[H-rep] checkpoint saved → ep=29500
+H-Rep Ep 29600 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 29700 | Recent Avg: 16.25 | Best Avg: 16.25
+H-Rep Ep 29800 | Recent Avg: 14.11 | Best Avg: 16.25
+H-Rep Ep 29900 | Recent Avg: 10.07 | Best Avg: 16.25
+H-Rep Ep 30000 | Recent Avg: 16.24 | Best Avg: 16.25
+[H-rep] checkpoint saved → ep=30000
+H-Rep Ep 30100 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 30200 | Recent Avg: 14.77 | Best Avg: 16.25
+H-Rep Ep 30300 | Recent Avg: 16.25 | Best Avg: 16.25
+H-Rep Ep 30400 | Recent Avg: 16.23 | Best Avg: 16.25
+H-Rep Ep 30500 | Recent Avg: 16.24 | Best Avg: 16.25
+[H-rep] checkpoint saved → ep=30500
+H-Rep Ep 30600 | Recent Avg: 14.81 | Best Avg: 16.25
+H-Rep Ep 30700 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 30800 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 30900 | Recent Avg: 16.25 | Best Avg: 16.25
+H-Rep Ep 31000 | Recent Avg: 16.24 | Best Avg: 16.25
+[H-rep] checkpoint saved → ep=31000
+H-Rep Ep 31100 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 31200 | Recent Avg: 16.25 | Best Avg: 16.25
+H-Rep Ep 31300 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 31400 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 31500 | Recent Avg: 16.24 | Best Avg: 16.25
+[H-rep] checkpoint saved → ep=31500
+H-Rep Ep 31600 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 31700 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 31800 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 31900 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 32000 | Recent Avg: 16.22 | Best Avg: 16.25
+[H-rep] checkpoint saved → ep=32000
+H-Rep Ep 32100 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 32200 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 32300 | Recent Avg: 16.19 | Best Avg: 16.25
+H-Rep Ep 32400 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 32500 | Recent Avg: 16.24 | Best Avg: 16.25
+[H-rep] checkpoint saved → ep=32500
+H-Rep Ep 32600 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 32700 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 32800 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 32900 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 33000 | Recent Avg: 16.24 | Best Avg: 16.25
+[H-rep] checkpoint saved → ep=33000
+H-Rep Ep 33100 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 33200 | Recent Avg: 16.25 | Best Avg: 16.25
+H-Rep Ep 33300 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 33400 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 33500 | Recent Avg: 16.24 | Best Avg: 16.25
+[H-rep] checkpoint saved → ep=33500
+H-Rep Ep 33600 | Recent Avg: 16.23 | Best Avg: 16.25
+H-Rep Ep 33700 | Recent Avg: 14.84 | Best Avg: 16.25
+H-Rep Ep 33800 | Recent Avg: 16.23 | Best Avg: 16.25
+H-Rep Ep 33900 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 34000 | Recent Avg: 16.24 | Best Avg: 16.25
+[H-rep] checkpoint saved → ep=34000
+H-Rep Ep 34100 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 34200 | Recent Avg: 16.23 | Best Avg: 16.25
+H-Rep Ep 34300 | Recent Avg: 16.25 | Best Avg: 16.25
+H-Rep Ep 34400 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 34500 | Recent Avg: 16.24 | Best Avg: 16.25
+[H-rep] checkpoint saved → ep=34500
+H-Rep Ep 34600 | Recent Avg: 16.23 | Best Avg: 16.25
+H-Rep Ep 34700 | Recent Avg: 16.22 | Best Avg: 16.25
+H-Rep Ep 34800 | Recent Avg: 11.92 | Best Avg: 16.25
+H-Rep Ep 34900 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 35000 | Recent Avg: 16.24 | Best Avg: 16.25
+[H-rep] checkpoint saved → ep=35000
+*** NEW BEST H-REP MODEL (Avg: 16.25) at Ep 35064 ***
+H-Rep Ep 35100 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 35200 | Recent Avg: 16.25 | Best Avg: 16.25
+H-Rep Ep 35300 | Recent Avg: 16.25 | Best Avg: 16.25
+H-Rep Ep 35400 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 35500 | Recent Avg: 16.24 | Best Avg: 16.25
+[H-rep] checkpoint saved → ep=35500
+H-Rep Ep 35600 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 35700 | Recent Avg: 16.21 | Best Avg: 16.25
+H-Rep Ep 35800 | Recent Avg: 16.23 | Best Avg: 16.25
+H-Rep Ep 35900 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 36000 | Recent Avg: 16.24 | Best Avg: 16.25
+[H-rep] checkpoint saved → ep=36000
+H-Rep Ep 36100 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 36200 | Recent Avg: 16.22 | Best Avg: 16.25
+H-Rep Ep 36300 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 36400 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 36500 | Recent Avg: 16.23 | Best Avg: 16.25
+[H-rep] checkpoint saved → ep=36500
+H-Rep Ep 36600 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 36700 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 36800 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 36900 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 37000 | Recent Avg: 16.23 | Best Avg: 16.25
+[H-rep] checkpoint saved → ep=37000
+H-Rep Ep 37100 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 37200 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 37300 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 37400 | Recent Avg: 9.94 | Best Avg: 16.25
+H-Rep Ep 37500 | Recent Avg: 3.84 | Best Avg: 16.25
+[H-rep] checkpoint saved → ep=37500
+H-Rep Ep 37600 | Recent Avg: 6.95 | Best Avg: 16.25
+H-Rep Ep 37700 | Recent Avg: 10.02 | Best Avg: 16.25
+H-Rep Ep 37800 | Recent Avg: 10.17 | Best Avg: 16.25
+H-Rep Ep 37900 | Recent Avg: 11.26 | Best Avg: 16.25
+H-Rep Ep 38000 | Recent Avg: 15.99 | Best Avg: 16.25
+[H-rep] checkpoint saved → ep=38000
+H-Rep Ep 38100 | Recent Avg: 11.36 | Best Avg: 16.25
+H-Rep Ep 38200 | Recent Avg: 14.51 | Best Avg: 16.25
+H-Rep Ep 38300 | Recent Avg: 16.19 | Best Avg: 16.25
+H-Rep Ep 38400 | Recent Avg: 16.03 | Best Avg: 16.25
+H-Rep Ep 38500 | Recent Avg: 16.05 | Best Avg: 16.25
+[H-rep] checkpoint saved → ep=38500
+H-Rep Ep 38600 | Recent Avg: 16.19 | Best Avg: 16.25
+H-Rep Ep 38700 | Recent Avg: 16.12 | Best Avg: 16.25
+H-Rep Ep 38800 | Recent Avg: 16.23 | Best Avg: 16.25
+H-Rep Ep 38900 | Recent Avg: 16.15 | Best Avg: 16.25
+H-Rep Ep 39000 | Recent Avg: 16.23 | Best Avg: 16.25
+[H-rep] checkpoint saved → ep=39000
+H-Rep Ep 39100 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 39200 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 39300 | Recent Avg: 16.23 | Best Avg: 16.25
+H-Rep Ep 39400 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 39500 | Recent Avg: 16.23 | Best Avg: 16.25
+[H-rep] checkpoint saved → ep=39500
+H-Rep Ep 39600 | Recent Avg: 14.85 | Best Avg: 16.25
+H-Rep Ep 39700 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 39800 | Recent Avg: 16.24 | Best Avg: 16.25
+H-Rep Ep 39900 | Recent Avg: 16.24 | Best Avg: 16.25
+[H-rep] checkpoint saved → ep=39999
+[H-rep] Done. Models saved to /projects/amfa5003/tangram/checkpoints/hrep/
+
+[train_single] Training done in 602.3 min. Evaluating ...
+[train_single] solve_rate=100.0%  reward=16.25±0.00
+[train_single] Policy saved → /projects/amfa5003/tangram/policies/hrep_seed0.pth

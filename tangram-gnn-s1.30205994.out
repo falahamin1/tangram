@@ -1,0 +1,378 @@
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+[train_single] method=gnn  seed=1  episodes=40000  ckpt_dir=/projects/amfa5003/tangram/checkpoints/gnn/seed1
+[GNN] Resuming from /projects/amfa5003/tangram/checkpoints/gnn/seed1/checkpoint_ep0010000.pth
+[GNN] episodes=40000  start_ep=10001  ckpt_dir=/projects/amfa5003/tangram/checkpoints/gnn/seed1
+Graph-Rep Ep 10100 | Recent Avg: 5.49 | Best Avg: 14.87
+Graph-Rep Ep 10200 | Recent Avg: 8.11 | Best Avg: 14.87
+Graph-Rep Ep 10300 | Recent Avg: 8.71 | Best Avg: 14.87
+Graph-Rep Ep 10400 | Recent Avg: 14.46 | Best Avg: 14.87
+Graph-Rep Ep 10500 | Recent Avg: 6.95 | Best Avg: 14.87
+[GNN] checkpoint saved → ep=10500
+Graph-Rep Ep 10600 | Recent Avg: 6.81 | Best Avg: 14.87
+Graph-Rep Ep 10700 | Recent Avg: 8.78 | Best Avg: 14.87
+Graph-Rep Ep 10800 | Recent Avg: 6.10 | Best Avg: 14.87
+Graph-Rep Ep 10900 | Recent Avg: 11.31 | Best Avg: 14.87
+Graph-Rep Ep 11000 | Recent Avg: 11.49 | Best Avg: 14.87
+[GNN] checkpoint saved → ep=11000
+Graph-Rep Ep 11100 | Recent Avg: 6.31 | Best Avg: 14.87
+Graph-Rep Ep 11200 | Recent Avg: 8.42 | Best Avg: 14.87
+Graph-Rep Ep 11300 | Recent Avg: 11.19 | Best Avg: 14.87
+Graph-Rep Ep 11400 | Recent Avg: 3.38 | Best Avg: 14.87
+Graph-Rep Ep 11500 | Recent Avg: 6.25 | Best Avg: 14.87
+[GNN] checkpoint saved → ep=11500
+Graph-Rep Ep 11600 | Recent Avg: 8.74 | Best Avg: 14.87
+Graph-Rep Ep 11700 | Recent Avg: 8.45 | Best Avg: 14.87
+Graph-Rep Ep 11800 | Recent Avg: 8.54 | Best Avg: 14.87
+Graph-Rep Ep 11900 | Recent Avg: 7.19 | Best Avg: 14.87
+Graph-Rep Ep 12000 | Recent Avg: 8.73 | Best Avg: 14.87
+[GNN] checkpoint saved → ep=12000
+Graph-Rep Ep 12100 | Recent Avg: 10.20 | Best Avg: 14.87
+Graph-Rep Ep 12200 | Recent Avg: 9.07 | Best Avg: 14.87
+Graph-Rep Ep 12300 | Recent Avg: 12.47 | Best Avg: 14.87
+Graph-Rep Ep 12400 | Recent Avg: 9.34 | Best Avg: 14.87
+Graph-Rep Ep 12500 | Recent Avg: 7.21 | Best Avg: 14.87
+[GNN] checkpoint saved → ep=12500
+*** NEW BEST GRAPH MODEL (Avg: 15.62) at Ep 12598 ***
+Graph-Rep Ep 12600 | Recent Avg: 9.76 | Best Avg: 15.62
+Graph-Rep Ep 12700 | Recent Avg: 11.00 | Best Avg: 15.62
+Graph-Rep Ep 12800 | Recent Avg: 10.09 | Best Avg: 15.62
+Graph-Rep Ep 12900 | Recent Avg: 11.30 | Best Avg: 15.62
+Graph-Rep Ep 13000 | Recent Avg: 8.71 | Best Avg: 15.62
+[GNN] checkpoint saved → ep=13000
+Graph-Rep Ep 13100 | Recent Avg: 2.62 | Best Avg: 15.62
+Graph-Rep Ep 13200 | Recent Avg: 11.25 | Best Avg: 15.62
+Graph-Rep Ep 13300 | Recent Avg: 13.09 | Best Avg: 15.62
+Graph-Rep Ep 13400 | Recent Avg: 7.40 | Best Avg: 15.62
+Graph-Rep Ep 13500 | Recent Avg: 12.54 | Best Avg: 15.62
+[GNN] checkpoint saved → ep=13500
+Graph-Rep Ep 13600 | Recent Avg: 8.57 | Best Avg: 15.62
+Graph-Rep Ep 13700 | Recent Avg: 9.74 | Best Avg: 15.62
+Graph-Rep Ep 13800 | Recent Avg: 9.67 | Best Avg: 15.62
+Graph-Rep Ep 13900 | Recent Avg: 12.57 | Best Avg: 15.62
+Graph-Rep Ep 14000 | Recent Avg: 9.57 | Best Avg: 15.62
+[GNN] checkpoint saved → ep=14000
+Graph-Rep Ep 14100 | Recent Avg: 14.25 | Best Avg: 15.62
+Graph-Rep Ep 14200 | Recent Avg: 7.98 | Best Avg: 15.62
+Graph-Rep Ep 14300 | Recent Avg: 9.59 | Best Avg: 15.62
+Graph-Rep Ep 14400 | Recent Avg: 10.05 | Best Avg: 15.62
+Graph-Rep Ep 14500 | Recent Avg: 11.15 | Best Avg: 15.62
+[GNN] checkpoint saved → ep=14500
+Graph-Rep Ep 14600 | Recent Avg: 7.91 | Best Avg: 15.62
+Graph-Rep Ep 14700 | Recent Avg: 5.77 | Best Avg: 15.62
+Graph-Rep Ep 14800 | Recent Avg: 9.95 | Best Avg: 15.62
+Graph-Rep Ep 14900 | Recent Avg: 11.33 | Best Avg: 15.62
+Graph-Rep Ep 15000 | Recent Avg: 6.81 | Best Avg: 15.62
+[GNN] checkpoint saved → ep=15000
+Graph-Rep Ep 15100 | Recent Avg: 6.90 | Best Avg: 15.62
+Graph-Rep Ep 15200 | Recent Avg: 9.90 | Best Avg: 15.62
+Graph-Rep Ep 15300 | Recent Avg: 6.28 | Best Avg: 15.62
+Graph-Rep Ep 15400 | Recent Avg: 6.80 | Best Avg: 15.62
+Graph-Rep Ep 15500 | Recent Avg: 9.59 | Best Avg: 15.62
+[GNN] checkpoint saved → ep=15500
+Graph-Rep Ep 15600 | Recent Avg: 6.83 | Best Avg: 15.62
+Graph-Rep Ep 15700 | Recent Avg: 12.22 | Best Avg: 15.62
+Graph-Rep Ep 15800 | Recent Avg: 10.85 | Best Avg: 15.62
+Graph-Rep Ep 15900 | Recent Avg: 8.97 | Best Avg: 15.62
+Graph-Rep Ep 16000 | Recent Avg: 9.83 | Best Avg: 15.62
+[GNN] checkpoint saved → ep=16000
+Graph-Rep Ep 16100 | Recent Avg: 9.71 | Best Avg: 15.62
+Graph-Rep Ep 16200 | Recent Avg: 6.91 | Best Avg: 15.62
+Graph-Rep Ep 16300 | Recent Avg: 8.65 | Best Avg: 15.62
+Graph-Rep Ep 16400 | Recent Avg: 7.93 | Best Avg: 15.62
+Graph-Rep Ep 16500 | Recent Avg: 7.96 | Best Avg: 15.62
+[GNN] checkpoint saved → ep=16500
+Graph-Rep Ep 16600 | Recent Avg: 11.15 | Best Avg: 15.62
+Graph-Rep Ep 16700 | Recent Avg: 6.11 | Best Avg: 15.62
+Graph-Rep Ep 16800 | Recent Avg: 6.84 | Best Avg: 15.62
+Graph-Rep Ep 16900 | Recent Avg: 11.34 | Best Avg: 15.62
+Graph-Rep Ep 17000 | Recent Avg: 8.21 | Best Avg: 15.62
+[GNN] checkpoint saved → ep=17000
+Graph-Rep Ep 17100 | Recent Avg: 8.28 | Best Avg: 15.62
+Graph-Rep Ep 17200 | Recent Avg: 7.53 | Best Avg: 15.62
+Graph-Rep Ep 17300 | Recent Avg: 4.38 | Best Avg: 15.62
+Graph-Rep Ep 17400 | Recent Avg: 9.73 | Best Avg: 15.62
+Graph-Rep Ep 17500 | Recent Avg: 10.12 | Best Avg: 15.62
+[GNN] checkpoint saved → ep=17500
+Graph-Rep Ep 17600 | Recent Avg: 5.31 | Best Avg: 15.62
+Graph-Rep Ep 17700 | Recent Avg: 5.11 | Best Avg: 15.62
+Graph-Rep Ep 17800 | Recent Avg: 12.60 | Best Avg: 15.62
+Graph-Rep Ep 17900 | Recent Avg: 7.92 | Best Avg: 15.62
+Graph-Rep Ep 18000 | Recent Avg: 9.63 | Best Avg: 15.62
+[GNN] checkpoint saved → ep=18000
+Graph-Rep Ep 18100 | Recent Avg: 8.27 | Best Avg: 15.62
+Graph-Rep Ep 18200 | Recent Avg: 10.73 | Best Avg: 15.62
+Graph-Rep Ep 18300 | Recent Avg: 10.92 | Best Avg: 15.62
+Graph-Rep Ep 18400 | Recent Avg: 9.80 | Best Avg: 15.62
+Graph-Rep Ep 18500 | Recent Avg: 8.04 | Best Avg: 15.62
+[GNN] checkpoint saved → ep=18500
+Graph-Rep Ep 18600 | Recent Avg: 6.98 | Best Avg: 15.62
+Graph-Rep Ep 18700 | Recent Avg: 8.33 | Best Avg: 15.62
+Graph-Rep Ep 18800 | Recent Avg: 12.94 | Best Avg: 15.62
+Graph-Rep Ep 18900 | Recent Avg: 8.38 | Best Avg: 15.62
+Graph-Rep Ep 19000 | Recent Avg: 11.53 | Best Avg: 15.62
+[GNN] checkpoint saved → ep=19000
+Graph-Rep Ep 19100 | Recent Avg: 10.32 | Best Avg: 15.62
+Graph-Rep Ep 19200 | Recent Avg: 11.16 | Best Avg: 15.62
+Graph-Rep Ep 19300 | Recent Avg: 5.35 | Best Avg: 15.62
+Graph-Rep Ep 19400 | Recent Avg: 14.21 | Best Avg: 15.62
+Graph-Rep Ep 19500 | Recent Avg: 3.91 | Best Avg: 15.62
+[GNN] checkpoint saved → ep=19500
+Graph-Rep Ep 19600 | Recent Avg: 12.54 | Best Avg: 15.62
+Graph-Rep Ep 19700 | Recent Avg: 11.25 | Best Avg: 15.62
+Graph-Rep Ep 19800 | Recent Avg: 11.38 | Best Avg: 15.62
+Graph-Rep Ep 19900 | Recent Avg: 1.43 | Best Avg: 15.62
+Graph-Rep Ep 20000 | Recent Avg: 9.66 | Best Avg: 15.62
+[GNN] checkpoint saved → ep=20000
+Graph-Rep Ep 20100 | Recent Avg: 10.95 | Best Avg: 15.62
+Graph-Rep Ep 20200 | Recent Avg: 4.98 | Best Avg: 15.62
+Graph-Rep Ep 20300 | Recent Avg: 7.63 | Best Avg: 15.62
+Graph-Rep Ep 20400 | Recent Avg: 12.77 | Best Avg: 15.62
+Graph-Rep Ep 20500 | Recent Avg: 7.88 | Best Avg: 15.62
+[GNN] checkpoint saved → ep=20500
+Graph-Rep Ep 20600 | Recent Avg: 6.78 | Best Avg: 15.62
+Graph-Rep Ep 20700 | Recent Avg: 5.37 | Best Avg: 15.62
+Graph-Rep Ep 20800 | Recent Avg: 9.68 | Best Avg: 15.62
+Graph-Rep Ep 20900 | Recent Avg: 8.26 | Best Avg: 15.62
+Graph-Rep Ep 21000 | Recent Avg: 12.82 | Best Avg: 15.62
+[GNN] checkpoint saved → ep=21000
+Graph-Rep Ep 21100 | Recent Avg: 12.35 | Best Avg: 15.62
+Graph-Rep Ep 21200 | Recent Avg: 9.75 | Best Avg: 15.62
+Graph-Rep Ep 21300 | Recent Avg: 12.85 | Best Avg: 15.62
+Graph-Rep Ep 21400 | Recent Avg: 9.38 | Best Avg: 15.62
+Graph-Rep Ep 21500 | Recent Avg: 12.40 | Best Avg: 15.62
+[GNN] checkpoint saved → ep=21500
+Graph-Rep Ep 21600 | Recent Avg: 12.64 | Best Avg: 15.62
+Graph-Rep Ep 21700 | Recent Avg: 10.81 | Best Avg: 15.62
+Graph-Rep Ep 21800 | Recent Avg: 14.55 | Best Avg: 15.62
+Graph-Rep Ep 21900 | Recent Avg: 11.46 | Best Avg: 15.62
+Graph-Rep Ep 22000 | Recent Avg: 10.93 | Best Avg: 15.62
+[GNN] checkpoint saved → ep=22000
+Graph-Rep Ep 22100 | Recent Avg: 9.69 | Best Avg: 15.62
+Graph-Rep Ep 22200 | Recent Avg: 8.34 | Best Avg: 15.62
+Graph-Rep Ep 22300 | Recent Avg: 8.20 | Best Avg: 15.62
+Graph-Rep Ep 22400 | Recent Avg: 8.25 | Best Avg: 15.62
+Graph-Rep Ep 22500 | Recent Avg: 12.52 | Best Avg: 15.62
+[GNN] checkpoint saved → ep=22500
+Graph-Rep Ep 22600 | Recent Avg: 14.32 | Best Avg: 15.62
+Graph-Rep Ep 22700 | Recent Avg: 10.05 | Best Avg: 15.62
+Graph-Rep Ep 22800 | Recent Avg: 11.67 | Best Avg: 15.62
+Graph-Rep Ep 22900 | Recent Avg: 9.74 | Best Avg: 15.62
+Graph-Rep Ep 23000 | Recent Avg: 7.04 | Best Avg: 15.62
+[GNN] checkpoint saved → ep=23000
+Graph-Rep Ep 23100 | Recent Avg: 9.64 | Best Avg: 15.62
+Graph-Rep Ep 23200 | Recent Avg: 6.55 | Best Avg: 15.62
+Graph-Rep Ep 23300 | Recent Avg: 9.79 | Best Avg: 15.62
+Graph-Rep Ep 23400 | Recent Avg: 10.90 | Best Avg: 15.62
+Graph-Rep Ep 23500 | Recent Avg: 11.19 | Best Avg: 15.62
+[GNN] checkpoint saved → ep=23500
+Graph-Rep Ep 23600 | Recent Avg: 12.69 | Best Avg: 15.62
+Graph-Rep Ep 23700 | Recent Avg: 12.41 | Best Avg: 15.62
+Graph-Rep Ep 23800 | Recent Avg: 12.41 | Best Avg: 15.62
+*** NEW BEST GRAPH MODEL (Avg: 15.69) at Ep 23878 ***
+Graph-Rep Ep 23900 | Recent Avg: 11.66 | Best Avg: 15.69
+Graph-Rep Ep 24000 | Recent Avg: 8.52 | Best Avg: 15.69
+[GNN] checkpoint saved → ep=24000
+Graph-Rep Ep 24100 | Recent Avg: 12.72 | Best Avg: 15.69
+Graph-Rep Ep 24200 | Recent Avg: 13.02 | Best Avg: 15.69
+Graph-Rep Ep 24300 | Recent Avg: 11.50 | Best Avg: 15.69
+Graph-Rep Ep 24400 | Recent Avg: 13.80 | Best Avg: 15.69
+Graph-Rep Ep 24500 | Recent Avg: 8.64 | Best Avg: 15.69
+[GNN] checkpoint saved → ep=24500
+Graph-Rep Ep 24600 | Recent Avg: 14.05 | Best Avg: 15.69
+Graph-Rep Ep 24700 | Recent Avg: 11.68 | Best Avg: 15.69
+Graph-Rep Ep 24800 | Recent Avg: 10.06 | Best Avg: 15.69
+Graph-Rep Ep 24900 | Recent Avg: 11.45 | Best Avg: 15.69
+Graph-Rep Ep 25000 | Recent Avg: 7.03 | Best Avg: 15.69
+[GNN] checkpoint saved → ep=25000
+Graph-Rep Ep 25100 | Recent Avg: 9.82 | Best Avg: 15.69
+Graph-Rep Ep 25200 | Recent Avg: 11.38 | Best Avg: 15.69
+Graph-Rep Ep 25300 | Recent Avg: 11.82 | Best Avg: 15.69
+Graph-Rep Ep 25400 | Recent Avg: 14.05 | Best Avg: 15.69
+Graph-Rep Ep 25500 | Recent Avg: 10.80 | Best Avg: 15.69
+[GNN] checkpoint saved → ep=25500
+Graph-Rep Ep 25600 | Recent Avg: 10.18 | Best Avg: 15.69
+Graph-Rep Ep 25700 | Recent Avg: 6.95 | Best Avg: 15.69
+Graph-Rep Ep 25800 | Recent Avg: 8.09 | Best Avg: 15.69
+Graph-Rep Ep 25900 | Recent Avg: 10.31 | Best Avg: 15.69
+Graph-Rep Ep 26000 | Recent Avg: 11.42 | Best Avg: 15.69
+[GNN] checkpoint saved → ep=26000
+Graph-Rep Ep 26100 | Recent Avg: 11.27 | Best Avg: 15.69
+Graph-Rep Ep 26200 | Recent Avg: 14.42 | Best Avg: 15.69
+Graph-Rep Ep 26300 | Recent Avg: 11.08 | Best Avg: 15.69
+Graph-Rep Ep 26400 | Recent Avg: 7.02 | Best Avg: 15.69
+Graph-Rep Ep 26500 | Recent Avg: 7.36 | Best Avg: 15.69
+[GNN] checkpoint saved → ep=26500
+Graph-Rep Ep 26600 | Recent Avg: 9.70 | Best Avg: 15.69
+Graph-Rep Ep 26700 | Recent Avg: 10.50 | Best Avg: 15.69
+Graph-Rep Ep 26800 | Recent Avg: 11.73 | Best Avg: 15.69
+Graph-Rep Ep 26900 | Recent Avg: 11.32 | Best Avg: 15.69
+Graph-Rep Ep 27000 | Recent Avg: 3.92 | Best Avg: 15.69
+[GNN] checkpoint saved → ep=27000
+Graph-Rep Ep 27100 | Recent Avg: 11.49 | Best Avg: 15.69
+Graph-Rep Ep 27200 | Recent Avg: 12.62 | Best Avg: 15.69
+Graph-Rep Ep 27300 | Recent Avg: 15.83 | Best Avg: 15.69
+Graph-Rep Ep 27400 | Recent Avg: 9.84 | Best Avg: 15.69
+Graph-Rep Ep 27500 | Recent Avg: 8.71 | Best Avg: 15.69
+[GNN] checkpoint saved → ep=27500
+Graph-Rep Ep 27600 | Recent Avg: 6.82 | Best Avg: 15.69
+Graph-Rep Ep 27700 | Recent Avg: 8.80 | Best Avg: 15.69
+Graph-Rep Ep 27800 | Recent Avg: 11.48 | Best Avg: 15.69
+Graph-Rep Ep 27900 | Recent Avg: 12.32 | Best Avg: 15.69
+Graph-Rep Ep 28000 | Recent Avg: 10.99 | Best Avg: 15.69
+[GNN] checkpoint saved → ep=28000
+Graph-Rep Ep 28100 | Recent Avg: 13.04 | Best Avg: 15.69
+*** NEW BEST GRAPH MODEL (Avg: 15.70) at Ep 28152 ***
+Graph-Rep Ep 28200 | Recent Avg: 12.86 | Best Avg: 15.70
+Graph-Rep Ep 28300 | Recent Avg: 10.99 | Best Avg: 15.70
+Graph-Rep Ep 28400 | Recent Avg: 11.17 | Best Avg: 15.70
+Graph-Rep Ep 28500 | Recent Avg: 12.26 | Best Avg: 15.70
+[GNN] checkpoint saved → ep=28500
+Graph-Rep Ep 28600 | Recent Avg: 11.22 | Best Avg: 15.70
+Graph-Rep Ep 28700 | Recent Avg: 7.17 | Best Avg: 15.70
+Graph-Rep Ep 28800 | Recent Avg: 14.31 | Best Avg: 15.70
+Graph-Rep Ep 28900 | Recent Avg: 11.57 | Best Avg: 15.70
+Graph-Rep Ep 29000 | Recent Avg: 7.37 | Best Avg: 15.70
+[GNN] checkpoint saved → ep=29000
+Graph-Rep Ep 29100 | Recent Avg: 11.22 | Best Avg: 15.70
+Graph-Rep Ep 29200 | Recent Avg: 13.97 | Best Avg: 15.70
+Graph-Rep Ep 29300 | Recent Avg: 8.42 | Best Avg: 15.70
+Graph-Rep Ep 29400 | Recent Avg: 11.59 | Best Avg: 15.70
+Graph-Rep Ep 29500 | Recent Avg: 12.75 | Best Avg: 15.70
+[GNN] checkpoint saved → ep=29500
+Graph-Rep Ep 29600 | Recent Avg: 12.63 | Best Avg: 15.70
+Graph-Rep Ep 29700 | Recent Avg: 5.97 | Best Avg: 15.70
+Graph-Rep Ep 29800 | Recent Avg: 8.11 | Best Avg: 15.70
+Graph-Rep Ep 29900 | Recent Avg: 5.94 | Best Avg: 15.70
+Graph-Rep Ep 30000 | Recent Avg: 11.25 | Best Avg: 15.70
+[GNN] checkpoint saved → ep=30000
+Graph-Rep Ep 30100 | Recent Avg: 8.16 | Best Avg: 15.70
+Graph-Rep Ep 30200 | Recent Avg: 15.71 | Best Avg: 15.70
+Graph-Rep Ep 30300 | Recent Avg: 11.06 | Best Avg: 15.70
+Graph-Rep Ep 30400 | Recent Avg: 14.10 | Best Avg: 15.70
+Graph-Rep Ep 30500 | Recent Avg: 7.01 | Best Avg: 15.70
+[GNN] checkpoint saved → ep=30500
+Graph-Rep Ep 30600 | Recent Avg: 9.70 | Best Avg: 15.70
+Graph-Rep Ep 30700 | Recent Avg: 9.76 | Best Avg: 15.70
+Graph-Rep Ep 30800 | Recent Avg: 9.97 | Best Avg: 15.70
+Graph-Rep Ep 30900 | Recent Avg: 11.59 | Best Avg: 15.70
+Graph-Rep Ep 31000 | Recent Avg: 7.82 | Best Avg: 15.70
+[GNN] checkpoint saved → ep=31000
+Graph-Rep Ep 31100 | Recent Avg: 8.29 | Best Avg: 15.70
+Graph-Rep Ep 31200 | Recent Avg: 14.28 | Best Avg: 15.70
+Graph-Rep Ep 31300 | Recent Avg: 6.91 | Best Avg: 15.70
+Graph-Rep Ep 31400 | Recent Avg: 10.03 | Best Avg: 15.70
+Graph-Rep Ep 31500 | Recent Avg: 12.79 | Best Avg: 15.70
+[GNN] checkpoint saved → ep=31500
+Graph-Rep Ep 31600 | Recent Avg: 9.77 | Best Avg: 15.70
+Graph-Rep Ep 31700 | Recent Avg: 9.61 | Best Avg: 15.70
+Graph-Rep Ep 31800 | Recent Avg: 11.05 | Best Avg: 15.70
+Graph-Rep Ep 31900 | Recent Avg: 12.58 | Best Avg: 15.70
+Graph-Rep Ep 32000 | Recent Avg: 5.37 | Best Avg: 15.70
+[GNN] checkpoint saved → ep=32000
+Graph-Rep Ep 32100 | Recent Avg: 12.47 | Best Avg: 15.70
+Graph-Rep Ep 32200 | Recent Avg: 10.92 | Best Avg: 15.70
+Graph-Rep Ep 32300 | Recent Avg: 9.96 | Best Avg: 15.70
+Graph-Rep Ep 32400 | Recent Avg: 12.89 | Best Avg: 15.70
+Graph-Rep Ep 32500 | Recent Avg: 9.54 | Best Avg: 15.70
+[GNN] checkpoint saved → ep=32500
+Graph-Rep Ep 32600 | Recent Avg: 13.93 | Best Avg: 15.70
+Graph-Rep Ep 32700 | Recent Avg: 8.03 | Best Avg: 15.70
+Graph-Rep Ep 32800 | Recent Avg: 13.10 | Best Avg: 15.70
+Graph-Rep Ep 32900 | Recent Avg: 14.03 | Best Avg: 15.70
+Graph-Rep Ep 33000 | Recent Avg: 11.22 | Best Avg: 15.70
+[GNN] checkpoint saved → ep=33000
+Graph-Rep Ep 33100 | Recent Avg: 12.63 | Best Avg: 15.70
+Graph-Rep Ep 33200 | Recent Avg: 13.91 | Best Avg: 15.70
+Graph-Rep Ep 33300 | Recent Avg: 9.60 | Best Avg: 15.70
+Graph-Rep Ep 33400 | Recent Avg: 12.67 | Best Avg: 15.70
+Graph-Rep Ep 33500 | Recent Avg: 8.41 | Best Avg: 15.70
+[GNN] checkpoint saved → ep=33500
+Graph-Rep Ep 33600 | Recent Avg: 11.15 | Best Avg: 15.70
+Graph-Rep Ep 33700 | Recent Avg: 13.98 | Best Avg: 15.70
+Graph-Rep Ep 33800 | Recent Avg: 11.29 | Best Avg: 15.70
+Graph-Rep Ep 33900 | Recent Avg: 11.60 | Best Avg: 15.70
+Graph-Rep Ep 34000 | Recent Avg: 9.54 | Best Avg: 15.70
+[GNN] checkpoint saved → ep=34000
+Graph-Rep Ep 34100 | Recent Avg: 14.12 | Best Avg: 15.70
+Graph-Rep Ep 34200 | Recent Avg: 13.97 | Best Avg: 15.70
+Graph-Rep Ep 34300 | Recent Avg: 8.24 | Best Avg: 15.70
+Graph-Rep Ep 34400 | Recent Avg: 14.15 | Best Avg: 15.70
+Graph-Rep Ep 34500 | Recent Avg: 10.63 | Best Avg: 15.70
+[GNN] checkpoint saved → ep=34500
+Graph-Rep Ep 34600 | Recent Avg: 15.59 | Best Avg: 15.70
+Graph-Rep Ep 34700 | Recent Avg: 15.52 | Best Avg: 15.70
+Graph-Rep Ep 34800 | Recent Avg: 10.77 | Best Avg: 15.70
+Graph-Rep Ep 34900 | Recent Avg: 12.86 | Best Avg: 15.70
+*** NEW BEST GRAPH MODEL (Avg: 15.80) at Ep 34911 ***
+Graph-Rep Ep 35000 | Recent Avg: 12.93 | Best Avg: 15.80
+[GNN] checkpoint saved → ep=35000
+Graph-Rep Ep 35100 | Recent Avg: 11.57 | Best Avg: 15.80
+Graph-Rep Ep 35200 | Recent Avg: 5.47 | Best Avg: 15.80
+*** NEW BEST GRAPH MODEL (Avg: 15.81) at Ep 35277 ***
+Graph-Rep Ep 35300 | Recent Avg: 10.83 | Best Avg: 15.81
+Graph-Rep Ep 35400 | Recent Avg: 12.94 | Best Avg: 15.81
+Graph-Rep Ep 35500 | Recent Avg: 14.13 | Best Avg: 15.81
+[GNN] checkpoint saved → ep=35500
+Graph-Rep Ep 35600 | Recent Avg: 14.09 | Best Avg: 15.81
+Graph-Rep Ep 35700 | Recent Avg: 7.20 | Best Avg: 15.81
+Graph-Rep Ep 35800 | Recent Avg: 11.16 | Best Avg: 15.81
+Graph-Rep Ep 35900 | Recent Avg: 9.79 | Best Avg: 15.81
+Graph-Rep Ep 36000 | Recent Avg: 12.32 | Best Avg: 15.81
+[GNN] checkpoint saved → ep=36000
+*** NEW BEST GRAPH MODEL (Avg: 15.84) at Ep 36080 ***
+Graph-Rep Ep 36100 | Recent Avg: 12.59 | Best Avg: 15.84
+Graph-Rep Ep 36200 | Recent Avg: 14.02 | Best Avg: 15.84
+Graph-Rep Ep 36300 | Recent Avg: 14.37 | Best Avg: 15.84
+Graph-Rep Ep 36400 | Recent Avg: 12.53 | Best Avg: 15.84
+Graph-Rep Ep 36500 | Recent Avg: 12.93 | Best Avg: 15.84
+[GNN] checkpoint saved → ep=36500
+Graph-Rep Ep 36600 | Recent Avg: 10.43 | Best Avg: 15.84
+Graph-Rep Ep 36700 | Recent Avg: 11.37 | Best Avg: 15.84
+Graph-Rep Ep 36800 | Recent Avg: 13.93 | Best Avg: 15.84
+Graph-Rep Ep 36900 | Recent Avg: 14.09 | Best Avg: 15.84
+Graph-Rep Ep 37000 | Recent Avg: 11.28 | Best Avg: 15.84
+[GNN] checkpoint saved → ep=37000
+Graph-Rep Ep 37100 | Recent Avg: 12.71 | Best Avg: 15.84
+Graph-Rep Ep 37200 | Recent Avg: 1.05 | Best Avg: 15.84
+Graph-Rep Ep 37300 | Recent Avg: 15.67 | Best Avg: 15.84
+Graph-Rep Ep 37400 | Recent Avg: 10.93 | Best Avg: 15.84
+Graph-Rep Ep 37500 | Recent Avg: 12.82 | Best Avg: 15.84
+[GNN] checkpoint saved → ep=37500
+Graph-Rep Ep 37600 | Recent Avg: 11.63 | Best Avg: 15.84
+Graph-Rep Ep 37700 | Recent Avg: 10.10 | Best Avg: 15.84
+Graph-Rep Ep 37800 | Recent Avg: 10.36 | Best Avg: 15.84
+Graph-Rep Ep 37900 | Recent Avg: 14.67 | Best Avg: 15.84
+Graph-Rep Ep 38000 | Recent Avg: 14.07 | Best Avg: 15.84
+[GNN] checkpoint saved → ep=38000
+Graph-Rep Ep 38100 | Recent Avg: 11.70 | Best Avg: 15.84
+Graph-Rep Ep 38200 | Recent Avg: 13.22 | Best Avg: 15.84
+Graph-Rep Ep 38300 | Recent Avg: 10.33 | Best Avg: 15.84
+Graph-Rep Ep 38400 | Recent Avg: 5.44 | Best Avg: 15.84
+Graph-Rep Ep 38500 | Recent Avg: 14.36 | Best Avg: 15.84
+[GNN] checkpoint saved → ep=38500
+*** NEW BEST GRAPH MODEL (Avg: 15.91) at Ep 38594 ***
+Graph-Rep Ep 38600 | Recent Avg: 9.99 | Best Avg: 15.91
+Graph-Rep Ep 38700 | Recent Avg: 15.70 | Best Avg: 15.91
+Graph-Rep Ep 38800 | Recent Avg: 9.86 | Best Avg: 15.91
+Graph-Rep Ep 38900 | Recent Avg: 15.59 | Best Avg: 15.91
+Graph-Rep Ep 39000 | Recent Avg: 9.87 | Best Avg: 15.91
+[GNN] checkpoint saved → ep=39000
+Graph-Rep Ep 39100 | Recent Avg: 14.04 | Best Avg: 15.91
+Graph-Rep Ep 39200 | Recent Avg: 15.62 | Best Avg: 15.91
+Graph-Rep Ep 39300 | Recent Avg: 10.08 | Best Avg: 15.91
+Graph-Rep Ep 39400 | Recent Avg: 11.32 | Best Avg: 15.91
+Graph-Rep Ep 39500 | Recent Avg: 12.63 | Best Avg: 15.91
+[GNN] checkpoint saved → ep=39500
+Graph-Rep Ep 39600 | Recent Avg: 14.37 | Best Avg: 15.91
+Graph-Rep Ep 39700 | Recent Avg: 14.08 | Best Avg: 15.91
+Graph-Rep Ep 39800 | Recent Avg: 12.88 | Best Avg: 15.91
+Graph-Rep Ep 39900 | Recent Avg: 11.46 | Best Avg: 15.91
+[GNN] checkpoint saved → ep=39999
+[GNN] Done. Models saved to /projects/amfa5003/tangram/checkpoints/gnn/seed1/
+
+[train_single] Training done in 1347.9 min. Evaluating ...
+[train_single] solve_rate=0.0%  reward=-1.29±0.00
+[train_single] Policy saved → /projects/amfa5003/tangram/policies/gnn_seed1.pth
