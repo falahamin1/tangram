@@ -5,8 +5,8 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=20G
-#SBATCH --job-name=tangram-cnn-s0
-#SBATCH --output=tangram-cnn-s0.%j.out
+#SBATCH --job-name=tangram-cnn-s8
+#SBATCH --output=tangram-cnn-s8.%j.out
 #SBATCH --qos=normal
 
 module purge
@@ -17,6 +17,6 @@ conda activate amfa-custom-env
 
 python3 train_single.py \
     --method cnn \
-    --seed 0 \
+    --seed 8 \
     --episodes 40000 \
     --checkpoint-interval 500

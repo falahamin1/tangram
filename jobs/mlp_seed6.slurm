@@ -1,12 +1,12 @@
 #!/bin/bash
 #SBATCH --nodes=1
-#SBATCH --time=48:00:00
+#SBATCH --time=24:00:00
 #SBATCH --partition=amilan
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=20G
-#SBATCH --job-name=tangram-cnn-s0
-#SBATCH --output=tangram-cnn-s0.%j.out
+#SBATCH --job-name=tangram-mlp-s6
+#SBATCH --output=tangram-mlp-s6.%j.out
 #SBATCH --qos=normal
 
 module purge
@@ -16,7 +16,7 @@ source "$(conda info --base)/etc/profile.d/conda.sh"
 conda activate amfa-custom-env
 
 python3 train_single.py \
-    --method cnn \
-    --seed 0 \
+    --method mlp \
+    --seed 6 \
     --episodes 40000 \
     --checkpoint-interval 500
