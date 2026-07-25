@@ -7,7 +7,7 @@
 #SBATCH --mem=20G
 #SBATCH --job-name=tangram-cnn-s4
 #SBATCH --output=tangram-cnn-s4.%j.out
-#SBATCH --qos=normal
+#SBATCH --qos=long
 
 module purge
 module load anaconda
